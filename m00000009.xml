@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<chemicalModel primeID="m00000009" xmlns="http://purl.org/NET/prime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/NET/prime/ http://warehouse.primekinetics.org/schema/model.xsd">
+  <copyright>©primekinetics.org 2009-2011</copyright>
+  <preferredKey group="prime">Updated Burke H2 O2 Model and Konnov Excited Species</preferredKey>
+  <bibliographyLink preferredKey="Burke et al, 2010" primeID="b00019095" />
+  <bibliographyLink preferredKey="Konnov 2015" primeID="b00019135" />
+  <speciesSet>
+    <speciesLink preferredKey="Ar" primeID="s00000049">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="He" primeID="s00010127">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000002" />
+      <transportDataLink preferredKey="Burke H2 O2 Model" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="N2" primeID="s00010231">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink primeID="s00010469" preferredKey="C(gr)">
+      <thermodynamicDataLink primeID="thp00000002" preferredKey="P 4/83" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="CO" primeID="s00009358">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="CO2" primeID="s00009360">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="H" primeID="s00009800">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="H2" primeID="s00009809">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="O" primeID="s00010285">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="O2" primeID="s00010295">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="OH" primeID="s00010102">
+      <thermodynamicDataLink preferredKey="S 9/01" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="H2O" primeID="s00009881">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000003" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="HO2" primeID="s00010103">
+      <thermodynamicDataLink preferredKey="L 5/89" primeID="thp00000004" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="H2O2" primeID="s00009882">
+      <thermodynamicDataLink preferredKey="CHEMKIN" primeID="thp00000004" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="O2(1Δ)" primeID="s00010294">
+      <thermodynamicDataLink preferredKey="ATcT/AO" primeID="thp00000001" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="O(1D)" primeID="s00010284">
+      <thermodynamicDataLink preferredKey="ATcT AO" primeID="thp00000001" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="O3" primeID="s00010316">
+      <thermodynamicDataLink preferredKey="L 5/90" primeID="thp00000001" />
+      <transportDataLink preferredKey="Aramco Mech 1.3" primeID="tr00000001" />
+    </speciesLink>
+    <speciesLink preferredKey="OH*" primeID="s00010097">
+      <thermodynamicDataLink preferredKey="T 8/80" primeID="thp00000001" />
+      <transportDataLink preferredKey="GRI-Mech 3.0" primeID="tr00000001" />
+    </speciesLink>
+  </speciesSet>
+  <reactionSet>
+    <reactionLink preferredKey="H + O2 = O + OH" reversible="true" primeID="r00012255">
+      <reactionRateLink preferredKey="H + O2 = O + OH" primeID="rk00000109" />
+    </reactionLink>
+    <reactionLink preferredKey="O + H2 = H + OH" reversible="true" primeID="r00012186">
+      <reactionRateLink preferredKey="O + H2 = H + OH" primeID="rk00000091" />
+    </reactionLink>
+    <reactionLink preferredKey="H2 + OH = H2O + H" reversible="true" primeID="r00013781">
+      <reactionRateLink preferredKey="O + H2 = H + OH" primeID="rk00000069" />
+    </reactionLink>
+    <reactionLink preferredKey="OH + OH = O + H2O" reversible="true" primeID="r00013805">
+      <reactionRateLink preferredKey="OH + OH = O + H2O" primeID="rk00000066" />
+    </reactionLink>
+    <reactionLink preferredKey="2H = H2" reversible="true" primeID="r00009454">
+      <reactionRateLink preferredKey="H2 = 2H" primeID="rk00000055" />
+    </reactionLink>
+    <reactionLink preferredKey="O + O = O2" reversible="true" primeID="r00013869">
+      <reactionRateLink preferredKey="O + O = O2" primeID="rk00000043" />
+    </reactionLink>
+    <reactionLink preferredKey="O + H = OH" reversible="true" primeID="r00012023">
+      <reactionRateLink preferredKey="O + H = OH" primeID="rk00000029" />
+    </reactionLink>
+    <reactionLink preferredKey="OH + H = H2O" reversible="true" primeID="r00013764">
+      <reactionRateLink preferredKey="OH + H = H2O" primeID="rk00000046" />
+    </reactionLink>
+    <reactionLink preferredKey="O2 + H = HO2" reversible="true" primeID="r00011821">
+      <reactionRateLink preferredKey="O2 + H + (M) = HO2 + (M)" primeID="rk00000051" />
+    </reactionLink>
+    <reactionLink preferredKey="O2 + H2 = HO2 + H" reversible="true" primeID="r00000999">
+      <reactionRateLink preferredKey="O2 + H2 = HO2 + H" primeID="rk00000004" />
+    </reactionLink>
+    <reactionLink preferredKey="HO2 + H = OH + OH" reversible="true" primeID="r00011866">
+      <reactionRateLink preferredKey="HO2 + H = 2OH" primeID="rk00000025" />
+    </reactionLink>
+    <reactionLink preferredKey="HO2 + O = O2 + OH" reversible="true" primeID="r00012138">
+      <reactionRateLink preferredKey="HO2 + O = O2 + OH" primeID="rk00000025" />
+    </reactionLink>
+    <reactionLink preferredKey="O2 + H2O = HO2 + OH" reversible="true" primeID="r00001014">
+      <reactionRateLink preferredKey="O2 + H2O = HO2 + OH" primeID="rk00000009" />
+    </reactionLink>
+    <reactionLink preferredKey="2HO2 = H2O2 + O2" reversible="true" primeID="r00013692">
+      <reactionRateLink preferredKey="2HO2 = H2O2 + O2" primeID="rk00000061" />
+    </reactionLink>
+    <reactionLink preferredKey="2OH = H2O2" reversible="true" primeID="r00013690">
+      <reactionRateLink preferredKey="2OH = H2O2" primeID="rk00000102" />
+    </reactionLink>
+    <reactionLink preferredKey="H2O2 + H = H2O + OH" reversible="true" primeID="r00013701">
+      <reactionRateLink preferredKey="H2O2 + H = H2O + OH" primeID="rk00000018" />
+    </reactionLink>
+    <reactionLink preferredKey="H2O2 + H = HO2 + H2" reversible="true" primeID="r00009484">
+      <reactionRateLink preferredKey="H2O2 + H = HO2 + H2" primeID="rk00000012" />
+    </reactionLink>
+    <reactionLink preferredKey="H2O2 + O = OH + HO2" reversible="true" primeID="r00000344">
+      <reactionRateLink preferredKey="H2O2 + O = OH + HO2" primeID="rk00000006" />
+    </reactionLink>
+    <reactionLink preferredKey="H2O2 + OH = H2O + HO2" reversible="true" primeID="r00011842">
+      <reactionRateLink preferredKey="H2O2 + OH = H2O + HO2" primeID="rk00000056" />
+    </reactionLink>
+    <reactionLink preferredKey="O3 = O2 + O" reversible="true" primeID="r00014351">
+      <reactionRateLink preferredKey="O3 = O2 + O" primeID="rk00000061" />
+    </reactionLink>
+    <reactionLink preferredKey="O3 + O = 2O2" reversible="true" primeID="r00014408">
+      <reactionRateLink preferredKey="O3 + O = 2O2" primeID="rk00000023" />
+    </reactionLink>
+    <reactionLink preferredKey="O3 + O = O2(1Δ) + O2" reversible="true" primeID="r00017325">
+      <reactionRateLink preferredKey="O3 + O = O2(1Δ) + O2" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="2O = O2(1Δ)" reversible="true" primeID="r00017326">
+      <reactionRateLink preferredKey="2O = O2(1Δ)" primeID="rk00000009" />
+    </reactionLink>
+    <reactionLink preferredKey="O2(1Δ) = O2" reversible="true" primeID="r00017327">
+      <reactionRateLink preferredKey="O2(1Δ) = O2" primeID="rk00000011" />
+    </reactionLink>
+    <reactionLink preferredKey="O2(1Δ) + O = O2 + O" reversible="true" primeID="r00000925">
+      <reactionRateLink preferredKey="O2(1Δ) + O = O2 + O" primeID="rk00000004" />
+    </reactionLink>
+    <reactionLink preferredKey="O2(1Δ) + O3 = O2 + O2 + O" reversible="true" primeID="r00000271">
+      <reactionRateLink preferredKey="O2(1Δ) + O3 = O2 + O2 + O" primeID="rk00000003" />
+    </reactionLink>
+    <reactionLink preferredKey="O(1D) + O2(1Δ) = O + O2" reversible="true" primeID="r00017328">
+      <reactionRateLink preferredKey="O(1D) + O2(1Δ) = O + O2" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="O(1D) + O2 = O + O2(1Δ)" reversible="true" primeID="r00017329">
+      <reactionRateLink preferredKey="O(1D) + O2 = O + O2(1Δ)" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="O(1D) + M = O + M" reversible="true" primeID="r00017330">
+      <reactionRateLink preferredKey="O(1D) + M = O + M" primeID="rk00000006" />
+    </reactionLink>
+    <reactionLink preferredKey="O(1D) + O3 = O2 + O + O" reversible="true" primeID="r00017331">
+      <reactionRateLink preferredKey="O(1D) + O3 = O2 + O + O" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="O(1D) + O3 = O2 + O2" reversible="true" primeID="r00000319">
+      <reactionRateLink preferredKey="O(1D) + O3 = O2 + O2" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="H2 + O2(1Δ) = H + HO2" reversible="true" primeID="r00017332">
+      <reactionRateLink preferredKey="H2 + O2(1Δ) = H + HO2" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="O2(1Δ) + H = OH + O" reversible="true" primeID="r00001026">
+      <reactionRateLink preferredKey="O2(1Δ) + H = OH + O" primeID="rk00000004" />
+    </reactionLink>
+    <reactionLink preferredKey="H + O2(1Δ) = HO2" reversible="true" primeID="r00017333">
+      <reactionRateLink preferredKey="H + O2(1Δ) + M = HO2 + M" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="HO2 + OH = H2O + O2(1Δ)" reversible="true" primeID="r00017334">
+      <reactionRateLink preferredKey="HO2 + OH = H2O + O2(1Δ)" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="OH + O2(1Δ) = O + HO2" reversible="true" primeID="r00017335">
+      <reactionRateLink preferredKey="OH + O2(1Δ) = O + HO2" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="O3 + H = OH + O2" reversible="true" primeID="r00014369">
+      <reactionRateLink preferredKey="O3 + H = OH + O2" primeID="rk00000010" />
+    </reactionLink>
+    <reactionLink preferredKey="O3 + OH = HO2 + O2" reversible="true" primeID="r00012159">
+      <reactionRateLink preferredKey="O3 + OH = HO2 + O2" primeID="rk00000020" />
+    </reactionLink>
+    <reactionLink preferredKey="O3 + HO2 = OH + 2O2" reversible="true" primeID="r00011849">
+      <reactionRateLink preferredKey="O3 + HO2 = OH + 2O2" primeID="rk00000008" />
+    </reactionLink>
+    <reactionLink preferredKey="H + HO2 = H2O + O(1D)" reversible="true" primeID="r00017336">
+      <reactionRateLink preferredKey="H + HO2 = H2O + O(1D)" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="O(1D) + H2 = OH + H" reversible="true" primeID="r00000306">
+      <reactionRateLink preferredKey="O(1D) + H2 = OH + H" primeID="rk00000004" />
+    </reactionLink>
+    <reactionLink preferredKey="O(1D) + H2O = OH + OH" reversible="true" primeID="r00000312">
+      <reactionRateLink preferredKey="O(1D) + H2O = OH + OH" primeID="rk00000005" />
+    </reactionLink>
+    <reactionLink preferredKey="H + O = OH*" reversible="true" primeID="r00017315">
+      <reactionRateLink preferredKey="H + O = OH*" primeID="rk00000010" />
+    </reactionLink>
+    <reactionLink preferredKey="OH* = OH" reversible="true" primeID="r00017324">
+      <reactionRateLink preferredKey="OH* = OH" primeID="rk00000010" />
+    </reactionLink>
+    <reactionLink preferredKey="OH* + H2 = H2O + H" reversible="true" primeID="r00017337">
+      <reactionRateLink preferredKey="OH* + H2 = H2O + H" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="OH* + O2 = O3 + H" reversible="true" primeID="r00017338">
+      <reactionRateLink preferredKey="OH* + O2 = O3 + H" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="OH* + O2 = HO2 + O" reversible="true" primeID="r00017339">
+      <reactionRateLink preferredKey="OH* + O2 = HO2 + O" primeID="rk00000001" />
+    </reactionLink>
+    <reactionLink preferredKey="OH* + H2O = H2O2 + H" reversible="true" primeID="r00017340">
+      <reactionRateLink preferredKey="OH* + H2O = H2O2 + H" primeID="rk00000001" />
+    </reactionLink>
+  </reactionSet>
+</chemicalModel>
